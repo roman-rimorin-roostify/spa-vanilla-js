@@ -1,0 +1,23 @@
+{
+  "name": "spa-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roman-rimorin-roostify/spa-vanilla-js.git"
+  },
+  "author": "Roman Rimorin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roman-rimorin-roostify/spa-vanilla-js/issues"
+  },
+  "homepage": "https://github.com/roman-rimorin-roostify/spa-vanilla-js#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
