@@ -1,4 +1,5 @@
 import AbstractView from './AbstractView.js';
+import { getVideo, getVideos } from '../services/yt-api.js';
 import { u } from '../lib.js';
 
 export default class extends AbstractView {
@@ -8,6 +9,10 @@ export default class extends AbstractView {
   }
 
   async getHtml() {
+    const { items } = await getVideos();
+    console.log(items)
+    // let video = await getVideo();
+    // console.log(video)
     return `
         <h1>Home</h1>
         <p>
@@ -16,6 +21,10 @@ export default class extends AbstractView {
         <p>
             <a href="${u('/posts')}" data-link>View recent posts</a>.
         </p>
+
+        <ul>
+          ${items.map(item => `<li><img src='${item.snippet.thumbnails.default.url}'/></li>`).join("")}
+        <ul>
 
         <br>
         <br>
