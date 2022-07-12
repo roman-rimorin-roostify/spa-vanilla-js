@@ -19,5 +19,6 @@
   "homepage": "https://github.com/roman-rimorin-roostify/spa-vanilla-js#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
-  }
+  },
+  "dependencies": {}
 }

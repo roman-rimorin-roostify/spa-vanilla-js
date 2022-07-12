@@ -10,7 +10,7 @@ export default class extends AbstractView {
 
   async getHtml() {
     const { items } = await getVideos();
-    console.log(items)
+    // console.log(items)
     // let video = await getVideo();
     // console.log(video)
     return `
@@ -22,8 +22,8 @@ export default class extends AbstractView {
             <a href="${u('/posts')}" data-link>View recent posts</a>.
         </p>
 
-        <ul>
-          ${items.map(item => `<li><img src='${item.snippet.thumbnails.default.url}'/></li>`).join("")}
+        <ul class="video-list">
+          ${items.map(item => `<li><img src='${item.snippet.thumbnails.medium.url}'/></li>`).join("")}
         <ul>
 
         <br>

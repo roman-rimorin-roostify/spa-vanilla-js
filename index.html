@@ -7,26 +7,88 @@
    
     <title>Single Page App demo</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./src/assets/css/index.css">
 
 </head>
 
 <body>
-    <!-- Paths start with baseurl for use on GH Pages. -->
-    <nav class="nav">
-        <a href="/single-page-app-vanilla-js/" 
-            class="nav__link" data-link>
-            Home
-        </a>
-        <a href="/single-page-app-vanilla-js/posts" 
-            class="nav__link" data-link>
-            Posts
-        </a>
-        <a href="/single-page-app-vanilla-js/settings" 
-            class="nav__link" data-link>
-            Settings
-        </a>
-    </nav>
+    <nav class="navbar nav" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <!-- Paths start with baseurl for use on GH Pages. -->
+            <a href="/single-page-app-vanilla-js/" 
+                class="navbar-item" data-link>
+                Home
+            </a>
+
+            <a href="/single-page-app-vanilla-js/posts" 
+                class="navbar-item" data-link>
+                Posts
+            </a>
+
+            <a href="/single-page-app-vanilla-js/settings" 
+                class="navbar-item" data-link>
+                Settings
+            </a>
+      
+            <a class="navbar-item">
+              Community
+            </a>
+
+            <a class="navbar-item">
+               Streaming Now
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About Us
+                </a>
+                <a class="navbar-item">
+                  Jobs
+                </a>
+                <a class="navbar-item">
+                  Contact Us
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <div id="app"></div>
 
